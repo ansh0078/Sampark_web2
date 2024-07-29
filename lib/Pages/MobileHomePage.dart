@@ -18,7 +18,7 @@ class MobileHomePage extends StatelessWidget {
           ),
         ),
         title: const Text(
-          'SAMAPRK',
+          'SAMAPARK',
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),
