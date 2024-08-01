@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Sampark Web',
+      title: 'Hello Web',
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: ThemeMode.dark,

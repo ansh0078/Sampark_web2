@@ -14,11 +14,11 @@ class MobileHomePage extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Image.asset(
             "assets/photos/logo.png",
-            width: 30,
+            width: 100,
           ),
         ),
         title: const Text(
-          'SAMAPARK',
+          'Hello',
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),
@@ -28,7 +28,6 @@ class MobileHomePage extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(
               Icons.download,
-              color: Colors.white,
             ),
             label: Text(
               'Donwload',
@@ -50,11 +49,11 @@ class MobileHomePage extends StatelessWidget {
                   children: [
                     Image.asset(
                       "assets/photos/logo.png",
-                      width: 50,
+                      width: 100,
                     ),
                     const SizedBox(width: 10),
                     Text(
-                      "Sampark",
+                      "Hello",
                       style: TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.bold,

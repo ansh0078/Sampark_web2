@@ -4,15 +4,12 @@ class WebFeatureTile extends StatelessWidget {
   final IconData icon;
   final String title;
   final String description;
-  const WebFeatureTile(
-      {super.key,
-      required this.icon,
-      required this.title,
-      required this.description});
+  const WebFeatureTile({super.key, required this.icon, required this.title, required this.description});
 
   @override
   Widget build(BuildContext context) {
     final w = MediaQuery.of(context).size.width;
+    final h = MediaQuery.of(context).size.height;
     return Container(
       padding: const EdgeInsets.all(10),
       height: 120,
@@ -24,25 +21,26 @@ class WebFeatureTile extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            height: 100,
-            width: 100,
-            padding: const EdgeInsets.all(20),
+            height: 80,
+            width: 80,
+            padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
               color: Colors.blue,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Icon(
               icon,
-              size: 50,
+              size: 40,
             ),
           ),
           const SizedBox(width: 20),
-          Expanded(
+          Flexible(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   title,
+                  maxLines: 1,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
@@ -50,6 +48,7 @@ class WebFeatureTile extends StatelessWidget {
                   ),
                 ),
                 Text(
+                  maxLines: 3,
                   description,
                   style: TextStyle(
                     fontSize: 15,

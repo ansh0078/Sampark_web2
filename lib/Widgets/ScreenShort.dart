@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ScreenShortPage extends StatelessWidget {
@@ -11,6 +10,9 @@ class ScreenShortPage extends StatelessWidget {
       "assets/photos/2.png",
       "assets/photos/3.png",
       "assets/photos/4.png",
+      "assets/photos/5.png",
+      "assets/photos/6.png",
+      "assets/photos/7.png",
     ];
     return Column(
       children: [
@@ -19,10 +21,7 @@ class ScreenShortPage extends StatelessWidget {
           children: [
             Text(
               "ScreenShorts",
-              style: TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                  color: Theme.of(context).colorScheme.onBackground),
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Theme.of(context).colorScheme.onBackground),
             ),
           ],
         ),

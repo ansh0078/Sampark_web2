@@ -15,11 +15,11 @@ class WebHomePage extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Image.asset(
             "assets/photos/logo.png",
-            width: 30,
+            width: 100,
           ),
         ),
         title: const Text(
-          'SAMAPARK',
+          'Hello',
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),
@@ -59,16 +59,16 @@ class WebHomePage extends StatelessWidget {
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  WebFeatureTile(icon: Icons.info, title: "Easy to use", description: "Sampark App is A Easy to use app where you can connect with each other"),
-                  WebFeatureTile(icon: Icons.call, title: "Chat With Friends", description: "Sampark App is A best for comunicating with friend anf family")
+                  WebFeatureTile(icon: Icons.info, title: "Easy to use", description: "Hello App is A Easy to use app where you can connect with each other"),
+                  WebFeatureTile(icon: Icons.chat, title: "Chat With Friends", description: "Hello App is A best for comunicating with friend and family")
                 ],
               ),
               const SizedBox(height: 20),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  WebFeatureTile(icon: Icons.video_call, title: "One to One Audio Call", description: "One to One video Call"),
-                  WebFeatureTile(icon: Icons.group, title: "Group Chat", description: "Sampark App is A Easy to use app where you can connect with each other")
+                  WebFeatureTile(icon: Icons.notes_outlined, title: "Add and Share Notes", description: "We can write a notes and share among to friends. I should be write, read and update real time."),
+                  WebFeatureTile(icon: Icons.group, title: "Group Chat", description: "Hello App is A Easy to use app where you can connect with each other")
                 ],
               ),
               const SizedBox(height: 80),

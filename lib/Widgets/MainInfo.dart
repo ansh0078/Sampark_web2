@@ -16,11 +16,11 @@ class MainInfo extends StatelessWidget {
                 children: [
                   Image.asset(
                     "assets/photos/logo.png",
-                    width: 50,
+                    width: 100,
                   ),
                   const SizedBox(width: 10),
                   Text(
-                    "Sampark",
+                    "Hello",
                     style: TextStyle(
                       fontSize: 40,
                       fontWeight: FontWeight.bold,
